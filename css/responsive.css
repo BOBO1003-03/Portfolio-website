@@ -1,0 +1,227 @@
+/* Responsive Design */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-link {
+        width: 100%;
+    }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 1rem 10px;
+    }
+
+    .logo a {
+        font-size: 1.3rem;
+    }
+
+    .nav-menu {
+        gap: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .theme-toggle {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        padding: 60px 15px;
+        min-height: auto;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .stat {
+        padding: 1rem;
+    }
+
+    .stat h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-card {
+        margin-bottom: 1rem;
+    }
+
+    .project-image {
+        height: 150px;
+        font-size: 1rem;
+    }
+
+    .project-info {
+        padding: 1rem;
+    }
+
+    .project-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-info p {
+        font-size: 0.9rem;
+    }
+
+    .tag {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    .skill-category {
+        padding: 1.5rem;
+    }
+
+    .skill-category h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact p {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* Extra Small Screens (320px and below) */
+@media (max-width: 320px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.8rem;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    .cta-buttons {
+        gap: 0.5rem;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+
+    .project-info p {
+        font-size: 0.85rem;
+    }
+
+    .contact-link {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Landscape Mode */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .theme-toggle,
+    .cta-buttons {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+}
